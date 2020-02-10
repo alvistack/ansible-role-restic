@@ -93,11 +93,8 @@
 - name: install bash completion
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-  shell: |
-    set -o pipefail
-    restic generate --bash-completion /etc/bash_completion.d/restic
+  command: restic generate --bash-completion /etc/bash_completion.d/restic
   args:
-    executable: "/bin/bash"
     creates: "/etc/bash_completion.d/restic"
   register: result
   changed_when: result is not succeeded
