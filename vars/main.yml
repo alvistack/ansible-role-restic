@@ -17,5 +17,5 @@
 _restic_download:
   "0.9.6":
     url: "https://github.com/restic/restic/releases/download/v0.9.6/restic_0.9.6_linux_amd64.bz2"
-    dest: "/var/cache/ansible/restic_0.9.6_linux_amd64.bz2"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/restic_0.9.6_linux_amd64.bz2"
     checksum: "sha1:234915cb524c70eadd037cd91be27fa00b5b62c5"
