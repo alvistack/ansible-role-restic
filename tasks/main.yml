@@ -79,7 +79,7 @@
   shell: |
     set -o pipefail
     cd /usr/local/bin
-    TMP_DIR="`mktemp -d`" \
+    TMP_DIR="$(mktemp -d)" \
       && bunzip2 -qc {{ restic_download.dest }} > $TMP_DIR/restic \
       && chown root:root $TMP_DIR/restic \
       && chmod 0755 $TMP_DIR/restic \
