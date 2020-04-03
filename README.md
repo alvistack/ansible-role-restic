@@ -1,6 +1,6 @@
 # Ansible Role for restic
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-restic.svg)](https://travis-ci.org/alvistack/ansible-role-restic)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-restic.svg)](https://travis-ci.com/alvistack/ansible-role-restic)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-restic.svg)](https://github.com/alvistack/ansible-role-restic)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-restic.svg)](https://github.com/alvistack/ansible-role-restic/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.restic-blue.svg)](https://galaxy.ansible.com/alvistack/restic)
