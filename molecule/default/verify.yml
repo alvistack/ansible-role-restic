@@ -18,9 +18,9 @@
   remote_user: root
   become: true
   tasks:
-    - name: restic --help
+    - name: restic version
       environment:
         PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      command: restic --help
+      command: restic version
       register: result
       changed_when: result is not succeeded
