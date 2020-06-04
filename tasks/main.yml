@@ -94,10 +94,8 @@
   environment:
     PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
   command: restic generate --bash-completion /etc/bash_completion.d/restic
-  args:
-    creates: "/etc/bash_completion.d/restic"
-  register: result
-  changed_when: result is not succeeded
+  changed_when: false
+  ignore_errors: true
   tags: restic
 
 - name: prepare files
