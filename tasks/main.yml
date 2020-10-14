@@ -16,7 +16,6 @@
 
 - name: include default variables
   include_vars: "../vars/main.yml"
-  tags: restic
 
 - name: include release specific variables
   include_vars: "{{ lookup('first_found', _params) }}"
@@ -31,7 +30,6 @@
       paths:
         - "../vars"
   ignore_errors: true
-  tags: restic
 
 - name: include release specific tasks
   include_tasks: "{{ lookup('first_found', _params) }}"
@@ -46,7 +44,6 @@
       paths:
         - "."
   ignore_errors: true
-  tags: restic
 
 - name: prepare directories
   file:
@@ -59,7 +56,6 @@
     - { dest: "/etc/bash_completion.d" }
     - { dest: "/usr/local/bin" }
     - { dest: "{{ restic_download.dest | dirname }}" }
-  tags: restic
 
 - name: download archive
   vars:
@@ -74,7 +70,6 @@
     - "{{ restic_download }}"
   register: get_url_result
   until: get_url_result is succeeded
-  tags: restic
 
 - name: unarchive package
   shell: |
@@ -89,7 +84,6 @@
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  tags: restic
 
 - name: install bash completion
   environment:
@@ -97,7 +91,6 @@
   command: restic generate --bash-completion /etc/bash_completion.d/restic
   changed_when: false
   ignore_errors: true
-  tags: restic
 
 - name: prepare files
   file:
@@ -109,4 +102,3 @@
   loop:
     - { dest: "/etc/bash_completion.d/restic" }
     - { dest: "/usr/local/bin/restic", mode: "0755" }
-  tags: restic

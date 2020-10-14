@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _restic_download:
+  "0.10.0":
+    url: "https://github.com/restic/restic/releases/download/v0.10.0/restic_0.10.0_linux_amd64.bz2"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/restic_0.10.0_linux_amd64.bz2"
+    checksum: "sha1:efabb976175465dfbce6ecce7b8ad021cf219884"
   "0.9.6":
     url: "https://github.com/restic/restic/releases/download/v0.9.6/restic_0.9.6_linux_amd64.bz2"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/restic_0.9.6_linux_amd64.bz2"
