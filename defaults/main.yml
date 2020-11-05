@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # restic version.
-restic_version: "0.10.0"
+restic_version: "0.11.0"
 
 # restic download details.
 restic_download: "{{ _restic_download[restic_version] }}"
