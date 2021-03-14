@@ -18,8 +18,8 @@ _restic_download:
   "0.12.0":
     url: "http://github.com/restic/restic/releases/download/v0.12.0/restic_0.12.0_linux_amd64.bz2"
     dest: "/var/cache/ansible/63d13d53834ea8aa4d461f0bfe32a89c70ec47e239b91f029ed10bd88b8f4b80/restic_0.12.0_linux_amd64.bz2"
-    checksum: "sha256:63d13d53834ea8aa4d461f0bfe32a89c70ec47e239b91f029ed10bd88b8f4b80"
+    sha256sum: "63d13d53834ea8aa4d461f0bfe32a89c70ec47e239b91f029ed10bd88b8f4b80"
   "0.11.0":
     url: "http://github.com/restic/restic/releases/download/v0.11.0/restic_0.11.0_linux_amd64.bz2"
     dest: "/var/cache/ansible/f559e774c91f1201ffddba74d5758dec8342ad2b50a3bcd735ccb0c88839045c/restic_0.11.0_linux_amd64.bz2"
-    checksum: "sha256:f559e774c91f1201ffddba74d5758dec8342ad2b50a3bcd735ccb0c88839045c"
+    sha256sum: "f559e774c91f1201ffddba74d5758dec8342ad2b50a3bcd735ccb0c88839045c"
