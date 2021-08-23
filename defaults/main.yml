@@ -13,12 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# restic release.
-restic_release: "0.12"
-
-# restic version.
-restic_version: "{{ _restic_version[restic_release] }}"
-
-# restic download details.
-restic_download: "{{ _restic_download[restic_version] }}"
