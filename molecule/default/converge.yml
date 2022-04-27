@@ -20,5 +20,5 @@
   tasks:
     - name: include role
       ansible.builtin.include_role:
-        name: restic
-      tags: restic
+        name: alvistack.restic
+      tags: alvistack.restic
